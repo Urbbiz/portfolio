@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --fontfamily-primary: 'Source Sans Pro', sans-serif;
+    --fontfamily-secondary: 'Source Code Pro', monospace;
+    --fontweight-reg: 300;
+    --fontweight-bold: 900;
+    --colour-light: #fff;
+    --colour-dark: #303030;
+    --colur-accent: #16e0bd;
+    --fontsize-h1: 3rem;
+    --fontsize-h2: 2.25rem;
+    --fontsize-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+     :root {
+        --fontsize-h1: 4.5rem;
+        --fontsize-h2: 3.75rem;
+        --fontsize-h3: 1.125rem;
+        --fs-body: 1rem;
+    }
+}
+
+
+/*General styles*/
+
+body {
+    background: var(--colour-light);
+    color: var(--colour-dark);
+    margin: 0;
+    font-family: var(--fontfamily-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong {
+    font-weight: var(--fontweight-bolds);
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fontsize-h1);
+}
+
+h2 {
+    font-size: var(--fontsize-h2);
+}
+
+h3 {
+    font-size: var(--fontsize-h3);
+}
+
+.section__title {
+    margin-bottom: .25rem;
+}
+
+.section--title--intro {
+    font-weight: var(--fontweight-reg);
+}
+
+.section--title--intro strong {
+    display: block;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fontsize-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--colur-accent);
+    font-family: var(--fontfamily-secondary);
+}
