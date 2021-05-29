@@ -406,6 +406,7 @@ header {
     z-index: 2;
     opacity: .3;
     color: white;
+    text-decoration: none;
 }
 
 .portfolio__img:hover,
